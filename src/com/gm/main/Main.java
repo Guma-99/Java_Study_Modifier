@@ -1,27 +1,17 @@
 package com.gm.main;
 
-import com.gm.animal.Cat;
-import com.gm.animal.Human;
-import com.gm.animal.Zoo;
+import com.gm.terran.Marine;
+import com.gm.unit.Unit;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// Cat cat = new Cat();
-
-		// cat.sound();
-		// cat.age = 5;
-
-		Human human = new Human();
-		// human.age = 500;
-		human.setAge(151);
-		human.info();
-		// ------------------------------------
-		System.out.println(Zoo.title);
-		Zoo.info();
+		Marine m1 = new Marine();
 		
-		Zoo zoo = new Zoo();
-		//zoo.price = 10000;
+		m1.setHp(30);
+		m1.info();
+		m1.move();
+		
 	}
 
 }
