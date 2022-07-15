@@ -1,5 +1,8 @@
 package com.gm.util;
 
-public class Collection {
-	
+public interface Collection
+{
+   public abstract int[] add(int[] numbers);
+
+   public abstract int[] remove(int[] numbers);
 }
