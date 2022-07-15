@@ -1,17 +1,26 @@
 package com.gm.main;
 
-import com.gm.terran.Marine;
-import com.gm.unit.Unit;
+import com.gm.himart.Client;
+import com.gm.himart.Computer;
+import com.gm.himart.Phone;
+import com.gm.himart.Tv;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Marine m1 = new Marine();
+		Computer computer = new Computer();
+		Phone phone = new Phone();
+		Tv tv = new Tv();
+
+		computer.info();
+		System.out.println("");
+		phone.info();
+		System.out.println("");
+		tv.info();
+		System.out.println("");
 		
-		m1.setHp(30);
-		m1.info();
-		m1.move();
-		
+		Client client = new Client();
+		client.buy(phone);
 	}
 
 }
