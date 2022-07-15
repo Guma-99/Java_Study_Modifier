@@ -20,7 +20,7 @@ public class Main {
 		System.out.println("");
 		
 		Client client = new Client();
-		client.buy(phone);
+		client.buy(computer);
 	}
 
 }

@@ -11,9 +11,9 @@ public class Client extends Unit{
 		this.setPoint(10);
 	}
 	
-	public void buy(Tv tv) {
-		this.money = this.money - tv.getPrice();
-		this.point = this.point + tv.getPoint();
+	public void buy(Unit unit) {
+		this.money = this.money - unit.getPrice();
+		this.point = this.point + unit.getPoint();
 		System.out.println("잔액: " + this.money);
 		System.out.println("Point: " + this.point);
 	}
